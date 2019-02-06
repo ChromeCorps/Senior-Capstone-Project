@@ -1,32 +1,28 @@
 * {
     box-sizing: border-box;
   }
-  
-  .header {
+.header{
     border: 1px solid #000000;
     padding: 15px;
     background-color: #008080;
     color: #FFF;
    text-align: center;
   }
-  
-  .student-houres {
+.student-houres{
     width: 33.3%;
     float: left;
     padding: 15px;
     border: 1px solid #000000;
     text-align: center
   }
-  
-  .parent-houres {
+.parent-houres{
     width: 33.3%;
     float: left;
     padding: 15px;
     border: 1px solid #000000;
     text-align: center
   }
-  
-  .balance {
+.balance{
     width: 33.3%;
     float: left;
     padding: 15px;
