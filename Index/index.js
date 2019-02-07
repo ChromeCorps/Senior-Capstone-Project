@@ -11,6 +11,8 @@ function googleLogin() {
         
             .then(result => {
                 const user = result.user;
-                document.getElementById("welcome").innerHTML = ('Welcome ${user.displayName}');        
-            })  
+                document.write('Hello' ${user.displayName});
+                console.log(user)
+            })
+            .catch(console.log)
 }
