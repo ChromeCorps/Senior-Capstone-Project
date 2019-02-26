@@ -17,6 +17,9 @@ firebase.auth().signInWithPopup(provider).then(function(result) {
     var credential = error.credential;
   });
 
+//Login with Phone Number
+
+
 //Login with Email and Password
 const txtEmail = document.getElementById('txtEmail');
 const txtPassword = document.getElementById('txtPassword');
@@ -24,9 +27,9 @@ const btnLogin = document.getElementById('btnLogin');
 const btnSignUp = document.getElementById('btnSignUp');
 const btnLogout = document.getElementById('btnLogout');
 
-
+//Login
 btnLogin.addEventListener('click', e => { 
-    const email = txtEmail.Value;
+    const email = txtEmail.value;
     const pass = txtPassword.value;
     const auth = firebase.auth();
 
@@ -43,10 +46,12 @@ btnSignUp.addEventListener('click', e => {
     promise.catch(e => console.log(e.message));
 });
 
+//Logout
 btnLogout.addEventListener('click', e => {
     firebase.auth().signOut();
 });
 
+//Make Logout button (In)Visible
 firebase.auth().onAuthStateChanged(firebaseUser =>  {
     if(firebaseUser) {
         console.log(firebaseUser);
