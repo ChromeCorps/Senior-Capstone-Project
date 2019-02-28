@@ -1,0 +1,21 @@
+/* For width smaller than 400px: */
+body {
+    background-repeat: no-repeat;
+    background-image: url('BSB_Ceiba_prep-0616.jpg'); 
+  }
+  
+  /* For width 400px and larger: */
+  @media only screen and (min-width: 400px) {
+    body { 
+       background-image: url('BSB_Ceiba_prep-0616.jpg'); 
+       background-size: cover;
+    } 
+}
+.loginBox{
+    margin: auto;
+    background-color: #6c7585;
+    width: 300px;
+    padding: 25px;
+    border: 3px solid #000000;
+    margin: auto;
+}
