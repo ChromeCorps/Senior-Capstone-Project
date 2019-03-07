@@ -1,86 +1,85 @@
 <!DOCTYPE html>
     <html>
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <!-- update the version number as needed -->
-            <script defer src="/__/firebase/5.8.2/firebase-app.js"></script>
-            <!-- include only the Firebase features as you need -->
-            <script defer src="/__/firebase/5.8.2/firebase-auth.js"></script>
-            <script defer src="/__/firebase/5.8.2/firebase-database.js"></script>
-            <!-- initialize the SDK after all desired features are loaded -->
-            <script defer src="/__/firebase/init.js"></script>
-            <link rel="stylesheet" type="text/css" href="index.css">
-            <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-            
-            <title>Responsive vertical menu navigation</title>
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-            <link rel="stylesheet" href="main.css">
-    
-            <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-            <script src="main.js"></script>
-        </head>
-        <body>
-            <div class="header">
-                <div class="logo">
-                    <i class="fa fa-tachometer"></i>
-                    <span>Brand</span>
-                </div>
-                <a href="#" class="nav-trigger"><span></span></a>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Responsive vertical menu navigation</title>
+
+        <!-- update the version number as needed -->
+        <script defer src="/__/firebase/5.8.2/firebase-app.js"></script>
+        <!-- include only the Firebase features as you need -->
+        <script defer src="/__/firebase/5.8.2/firebase-auth.js"></script>
+        <script defer src="/__/firebase/5.8.2/firebase-database.js"></script>
+        <!-- initialize the SDK after all desired features are loaded -->
+        <script defer src="/__/firebase/init.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="logo">
+                <i class="fa fa-tachometer"></i>
+                <span>Brand</span>
             </div>
-            <div class="side-nav">
-                <div class="logo">
-                    <i class="fa fa-tachometer"></i>
-                    <span>Brand</span>
-                </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <span><i class="fa fa-user"></i></span>
-                                <span>Users</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-    
-                                <span><i class="fa fa-envelope"></i></span>
-                                <span>Messages</span>
-                            </a>
-                        </li>
-                        <li class="active">
-                            <a href="#">
-                                <span><i class="fa fa-bar-chart"></i></span>
-                                <span>Analytics</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span><i class="fa fa-credit-card-alt"></i></span>
-                                <span>Payments</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+            <a href="#" class="nav-trigger"><span></span></a>
+        </div>
+        <div class="side-nav">
+            <div class="logo">
+                <i class="fa fa-tachometer"></i>
+                <span>Brand</span>
             </div>
-            <div class="main-content">
-                <div class="title">
-                    Analytics
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa fa-user"></i></span>
+                            <span>Users</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa fa-envelope"></i></span>
+                            <span>Messages</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <span><i class="fa fa-bar-chart"></i></span>
+                            <span>Analytics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa fa-credit-card-alt"></i></span>
+                            <span>Payments</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="title">
+                Analytics
+            </div>
+            <div class="main">
+                <div class="widget">
+                    <div class="title">Student Hours</div>
+                    <div class="chart"></div>
                 </div>
-                <div class="main">
-                    <div class="widget">
-                        <div class="title">Student Hours</div>
-                        <div class="chart"></div>
-                    </div>
-                    <div class="widget">
-                        <div class="title">Parent Hours</div>
-                        <div class="chart"></div>
-                    </div>
-                    <div class="widget">
-                        <div class="title">Outstanding Balance</div>
-                        <div class="chart"></div>
-                    </div>
+                <div class="widget">
+                    <div class="title">Parent Hours</div>
+                    <div class="chart"></div>
+                </div>
+                <div class="widget">
+                    <div class="title">Outstanding Balance</div>
+                     <div class="chart"></div>
                 </div>
             </div>
-        </body>
+        </div>
+    </body>
     </html>
