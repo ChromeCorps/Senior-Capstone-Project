@@ -11,4 +11,9 @@ var app_fireBase = {};
   };
   firebase.initializeApp(config);
   app_fireBase = firebase;
+
+  // Firebase Auth Reference
+  const auth = firebase.auth();
+  const db = firebase.firestore(); 
+
 })()

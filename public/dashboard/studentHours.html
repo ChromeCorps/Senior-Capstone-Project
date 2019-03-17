@@ -9,10 +9,9 @@
         <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
         <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="/public/css/studentHours.css">
         <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-        <script src="fireBase.js"></script>
-        <script src="index.js"></script>
+        <script src="/public/js/fireBase.js"></script>
     </head>
     <body>
         <div class="header">
@@ -29,38 +28,38 @@
             </div>
             <nav>
                 <ul>
-                    <li class="active">
-                        <a href="login.html">
+                    <li>
+                        <a href="/public/index.html">
                             <span><i class="fas fa-tachometer-alt"></i></span>
                             <span>Dashboard</span>
                         </a>
                     </li>
                     <li>
-                        <a href="users.html">
+                        <a href="/public/dashboard/users.html">
                             <span><i class="fa fa-user"></i></span>
                             <span>Users</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="studentHours.html">
+                    <li class="active">
+                        <a href="/public/dashboard/studentHours.html">
                             <span><i class="fas fa-user-clock"></i></span>
                             <span>Student Hours</span>
                         </a>
                     </li>
                     <li>
-                        <a href="parentHours.html">
+                        <a href="/public/dashboard/parentHours.html">
                             <span><i class="fas fa-business-time"></i></span>
                              <span>Parent Hours</span>
                         </a>
                     </li>
                     <li>
-                        <a href="payments.html">
+                        <a href="/public/dashboard/payments.html">
                             <span><i class="fas fa-money-bill-alt"></i></span>
                             <span>Payments</span>
                         </a>
                     </li>
                     <li>
-                        <a href="makePayment.html">
+                        <a href="/public/dashboard/makePayment.html">
                             <span><i class="fas fa-cash-register"></i></span>
                             <span>Make Payment</span>
                         </a>
@@ -68,30 +67,36 @@
                 </ul>
             </nav>
         </div>
-        <div class="main-content">
-            <div class="title">
-                Dashboard
+        <!-- LIST -->
+        <div class="collapsible-container">
+            <button class="collapsible">Open Section 1</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <div class="main">
-                <div class="widget">
-                    <div class="title">Student Hours</div>
-                    <div class="numbers">
-                        <h1 id="Student-Hours">100/100</h1>
-                    </div>
-                </div>
-                <div class="widget">
-                    <div class="title">Parent Hours</div>
-                    <div class="numbers">
-                        <h1 id="Parent-Hours">25/25</h1>
-                    </div>
-                </div>
-                <div class="widget">
-                    <div class="title">Outstanding Balance</div>
-                    <div class="numbers">
-                        <h1 id="Balance">$100</h1>
-                    </div>
-                </div>
+            <button class="collapsible">Open Section 2</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="collapsible">Open Section 3</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </div>
+        <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active-hover");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                      content.style.display = "none";
+                    } else {
+                      content.style.display = "block";
+                    }
+                  });
+                }
+                </script>
     </body>
     </html>

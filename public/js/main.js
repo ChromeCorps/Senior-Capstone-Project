@@ -1,4 +1,4 @@
-var index ={};
+var mainApp ={};
 
 (function(){
 	var firebase = app_fireBase;
@@ -17,10 +17,9 @@ var uid = null;
 	function logOut() {
 		firebase.auth().sigOut();
 	}
-
-	index.logOut = logOut;
+	
+	mainApp.logOut = logOut;
 })()
-
 $(document).ready(function() {
 	$('.nav-trigger').click(function() {
 		$('.side-nav').toggleClass('visible');
